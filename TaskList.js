@@ -7,7 +7,7 @@ const TodoList = ({item, setTodos, todos, setTextInput, seteditItem}) => {
   };
   const EditHandler = items => {
     setTextInput(items.text);
-    seteditItem(items);
+    seteditItem(item.id);
   };
   return (
     <TouchableOpacity style={styles.container}>
